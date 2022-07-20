@@ -8,6 +8,9 @@ build: src/Program.java
 package: 
 	jar --create -f Program.jar -m manifest.mf -C classes . src
 
+run:
+	java -jar Program.jar
+
 clean:
 	rm Program.jar
 	rm -r classes
